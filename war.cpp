@@ -104,7 +104,7 @@ class Deck
 		{
 			if (isEmpty())
 			{
-				throw logic_error("the deck is empty");
+				throw "Error - The deck is empty";
 			}else
 			{
 			Card card = deck[cardidx];
@@ -180,9 +180,9 @@ int main()
                 }
                 gameCounter++;
                 cout << endl;
-		} catch(logic_error)
+		} catch(const char* error)
 		{
-		cout << "Error - Deck is empty" << endl;		
+		cout << error << endl;		
 		break;
 		}
 	}
