@@ -11,10 +11,10 @@ using namespace std;
 class Card
 {
 	private:
-		map<char, int> cvals = {{'A', 1},{'2', 2},{'3',3},{'4',4},{'5',5},{'6',6},{'7',7},{'8',8},{'9',9},{'T',10},{'J',11},{'Q',12},{'K',13}};
-	public:
 		char rank;
 		char suit;
+		map<char, int> cvals = {{'A', 1},{'2', 2},{'3',3},{'4',4},{'5',5},{'6',6},{'7',7},{'8',8},{'9',9},{'T',10},{'J',11},{'Q',12},{'K',13}};
+	public:
 		Card(){}	//Have to create the empty constructor first, then we can specify its attributes
 		Card(char r, char s)
 		{
